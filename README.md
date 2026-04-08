@@ -3,10 +3,6 @@
 this project demonstrates deploying a wazuh agent and monitoring endpoint activity using file integrity monitoring (fim).
 
 ## setup steps
-1. installed wazuh manager on windows.
-2. installed wazuh agent on endpoint machine.
-3. configured agent to connect to manager via `ossec.conf`.
-4. verified agent connectivity and generated test events.
 
 ## screenshots
 
