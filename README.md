@@ -2,7 +2,7 @@
 
 ## Objective
 
-Protect [**Internee.pk](http://internee.pk/)’s** devices and servers from malware and unauthorized access by deploying endpoint detection, monitoring, and automated alerting mechanisms.
+Protect **[Internee.pk](http://internee.pk/)’s** devices and servers from malware and unauthorized access by deploying endpoint detection, monitoring, and automated alerting mechanisms.
 
 ---
 
