@@ -1,0 +1,31 @@
+GNU nano 7.2                                                                           /var/ossec/etc/rules/local_rules.xml
+<group name="local,sshd,syslog,malware-intel,sysmon,">
+
+  <rule id="100001" level="5">
+    <if_sid>5716</if_sid>
+    <srcip>1.1.1.1</srcip>
+    <description>sshd: authentication failed from IP 1.1.1.1.</description>
+  </rule>
+
+  <rule id="100002" level="12">
+    <if_sid>5502</if_sid>
+    <description>Multiple failed login attempts detected</description>
+  </rule>
+
+
+  <rule id="100300" level="12">
+    <if_sid>92031</if_sid>
+
+    <!-- Extract SHA256 from hashes field -->
+    <regex type="pcre2">SHA256=([A-Fa-f0-9]{64})</regex>
+
+    <description>MalwareBazaar SHA256 detected in Sysmon hashes field</description>
+  </rule>
+
+   <rule id="100400" level="5">
+     <if_sid>92031</if_sid>
+     <regex>SHA256=([A-Fa-f0-9]{64})</regex>
+     <description>Extract SHA256 from Sysmon hashes field</description>
+   </rule>
+
+</group>
